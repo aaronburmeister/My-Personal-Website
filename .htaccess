@@ -29,3 +29,9 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+# Hides dotfiles from users
+RedirectMatch 403 /\..*$
+
+# Hides folders from users
+Options -Indexes
