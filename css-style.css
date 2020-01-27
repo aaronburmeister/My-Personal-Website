@@ -3,6 +3,7 @@ div.background {
     position: relative;
     text-align: left;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h1.title {
@@ -14,5 +15,5 @@ h1.title {
 p.description {
     position: absolute;
     bottom: 8px;
-    left: 16 px;
+    left: 16px;
 }
