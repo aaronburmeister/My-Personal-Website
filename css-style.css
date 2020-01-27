@@ -1,0 +1,18 @@
+/* Styling */
+div.background {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h1.title {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+p.description {
+    position: absolute;
+    bottom: 8px;
+    left: 16 px;
+}
