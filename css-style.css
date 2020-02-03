@@ -1,4 +1,67 @@
 /* Styling */
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: inherit;
+}
+/*************** HEADER STYLES *************/
+
+header {
+    display: block;
+    padding-bottom: 11.2rem;
+    background-color: lightblue;
+    margin: 0px
+}
+
+header h1 {
+    text-align: left;
+    padding: 1rem 0rem 0rem 1rem;
+    margin: 0px;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header img {
+    padding: 1rem;
+    float: left;
+    width: 9rem;
+    height: 9rem;
+}
+
+nav {
+    float: left;
+    padding-top: 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0rem 1rem 0rem 1rem;
+    margin-top: 2rem;
+    background-color: rgb(153, 199, 214);
+    box-shadow: 3px 3px 4px black;
+}
+
+nav ul li:hover {
+    background-color: tomato;
+}
+
+/***************** MAIN CONTENT *****************/
+
 div.background {
     position: relative;
     text-align: left;
