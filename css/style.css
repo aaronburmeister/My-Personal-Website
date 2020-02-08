@@ -49,14 +49,14 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 /* Styling */
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
+    display: block;
 }
 
 a {
@@ -66,15 +66,15 @@ a {
 
 header {
     display: block;
-    padding-bottom: 11.2rem;
-    background-color: lightblue;
+    padding: 1rem;
+    background-color: grey;
 }
 
 header h1 {
     text-align: left;
     font-size: 32px;
     font-weight: 700;
-    padding: 1rem 0rem 0rem 1rem;
+    color: white;
 }
 
 header h1 a {
@@ -82,29 +82,33 @@ header h1 a {
 }
 
 header img {
-    padding: 1rem;
-    float: left;
     width: 9rem;
     height: 9rem;
 }
 
 nav {
-    float: left;
+    display: flex;
     padding-top: 1rem;
 }
 
 nav ul {
-    padding: 1rem;
     list-style-type: none;
+    padding: 2rem;
+    display: flex;
+    width: 50%;
 }
 
 nav ul li {
+    line-height: 3rem;
     font-size: 16px;
-    display: inline-block;
-    padding: 1rem 1rem 1rem 1rem;
-    margin-top: 2rem;
-    background-color: rgb(153, 199, 214);
-    box-shadow: 3px 3px 4px black;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: ghostwhite;
+    box-shadow: 1px 1px 2px black;
+    margin-right: 0.3rem;
+}
+
+nav ul a {
+    text-decoration: none;
 }
 
 nav ul li:hover {
@@ -113,9 +117,8 @@ nav ul li:hover {
 
 /***************** MAIN CONTENT *****************/
 
-div.background {
+section#background {
     position: relative;
-    text-align: left;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -131,4 +134,18 @@ p#description {
     position: absolute;
     bottom: 8px;
     left: 16px;
+}
+
+/* RESUME PAGE **************************************/
+
+#resume-description {
+    padding: 5rem 0rem 0rem 5rem;
+}
+
+#resume-description p {
+    padding-bottom: 2rem;
+}
+
+p + button {
+    padding: 1rem;
 }
