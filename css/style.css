@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,7 +50,7 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 /* Styling */
 * {
     box-sizing: border-box;
@@ -65,54 +68,57 @@ a {
 /*************** HEADER STYLES *************/
 
 header {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
-    background-color: grey;
+    background-color: white;
 }
 
 header h1 {
     text-align: left;
     font-size: 32px;
     font-weight: 700;
-    color: white;
+    color: black;
+    width: 30%
 }
 
 header h1 a {
     text-decoration: none;
 }
 
-header img {
+#nav-pic {
     width: 9rem;
     height: 9rem;
+    border-radius: 100px;
 }
 
 nav {
     display: flex;
-    padding-top: 1rem;
+    justify-content: flex-end;
+    width: 60%;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 2rem;
+    justify-content: space-evenly;
+    margin: 3rem 1rem 3rem 1rem;
     display: flex;
-    width: 50%;
-}
-
-nav ul li {
-    line-height: 3rem;
-    font-size: 16px;
-    padding: 1rem 2rem 1rem 2rem;
-    background-color: ghostwhite;
-    box-shadow: 1px 1px 2px black;
-    margin-right: 0.3rem;
+    width: 60%;
+    font-family: 'Kanit', sans-serif;
 }
 
 nav ul a {
     text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px;
+    margin: auto;
 }
 
-nav ul li:hover {
-    background-color: tomato;
+nav ul a:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
 }
 
 /***************** MAIN CONTENT *****************/
@@ -126,14 +132,14 @@ section#background {
 h1#title {
     font-size: 32px;
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 130px;
+    left: 130px;
 }
 
 p#description {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    top: 170px;
+    left: 180px;
 }
 
 /* RESUME PAGE **************************************/
