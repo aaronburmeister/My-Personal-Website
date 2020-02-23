@@ -155,3 +155,34 @@ p#description {
 p + button {
     padding: 1rem;
 }
+
+/* BLOG PAGE *****************************************/
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 70%;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 5px black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.post h3 {
+    font-size: 28px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.post time{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+.post p{
+    padding: 1rem 1rem 1rem 1rem;
+}
