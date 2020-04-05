@@ -135,6 +135,7 @@ nav ul a:hover .svg-icon {
 .icon {
     height: 20px;
     width: auto;
+    margin-right: 0.5rem;
 }
 
 
@@ -162,10 +163,11 @@ section#main {
     transform: translate(-75%);
     z-index: 3;
     position: absolute;
+    box-shadow: 1px 1px 5px black;
 }
 
 #info-container {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 h2 {
@@ -174,22 +176,35 @@ h2 {
 
 .underlying {
     z-index: 0;
-    background-color: lightblue;
+    background-color: rgb(65, 160, 192);
     border-radius: 30px;
     width: fit-content;
     padding: 1rem 1rem 1rem 7vw;
     margin: 2rem 3rem 0rem 36vw;
+    box-shadow: 1px 1px 5px black;
 }
 
 .big {
     padding: 1rem 1rem 1rem 11vw;
-    margin: 2rem 3rem 0rem 33vw;
+    margin: 2rem 15rem 0rem 33vw;
+}
+
+.underlying a svg:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.linker {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
 }
 
 #projects-container {
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 5rem 5rem 10rem;
+    flex-wrap: wrap;
 }
 
 .project {
@@ -198,6 +213,13 @@ h2 {
 
 .project-info a{
     display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    fill: rgb(65, 160, 192);
+    color: rgb(65, 160, 192);
 }
 
 /* RESUME PAGE **************************************/
