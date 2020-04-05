@@ -138,6 +138,12 @@ nav ul a:hover .svg-icon {
     margin-right: 0.5rem;
 }
 
+@media screen and (max-width: 760px) {
+    nav {
+        display: none;
+    }
+}
+
 
 /***************** MAIN CONTENT *****************/
 
@@ -224,6 +230,64 @@ h2 {
 .project-info a:hover {
     fill: rgb(65, 160, 192);
     color: rgb(65, 160, 192);
+}
+
+@media screen and (max-width: 1060px) {
+    #info-container {
+        margin-top: 4.5rem;
+        width: 600px;
+    }
+    .underlying {
+        padding: 1rem 1rem 1rem 9rem;
+        margin: 0rem 0rem 1rem 7rem;
+        transform: translate(-12%);
+    }
+    .big {
+        margin: 2rem -15rem 2rem 10rem;
+    }
+}
+@media screen and (max-width: 920px) {
+    #info-container {
+        margin-top: 4.5rem;
+        width: 500px;
+    }
+    .underlying {
+        padding: 1rem 1rem 1rem 9rem;
+        margin: 0rem 0rem 1rem 7rem;
+        transform: translate(-23%);
+    }
+    .big {
+        margin: 2rem -15rem 2rem 10rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    #intro-container {
+        height: auto;
+    }
+    #main-picture {
+        position: relative;
+        margin-top: 1rem;
+        transform: translate(0%);
+        height: 300px;
+        width: 300px;
+    }
+    #info-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 0.5rem;
+    }
+    .underlying {
+        padding: 1rem;
+        margin: 0.5rem;
+        transform: translate(0%)
+    }
+    .big {
+        margin: 0.5rem;
+    }
 }
 
 /* RESUME PAGE **************************************/
