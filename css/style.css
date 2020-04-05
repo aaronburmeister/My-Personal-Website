@@ -152,7 +152,7 @@ section#main {
     flex-direction: column;
     position: relative;
     align-items: center;
-    margin-bottom: 8rem;
+    height: 500px;
 }
 
 #main-picture {
@@ -167,14 +167,9 @@ section#main {
 }
 
 #info-container {
-    margin-top: 6rem;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-
-h2 {
-    font-size: 28px;
+    margin-top: 6.5rem;
+    position: absolute;
+    width: 615px;
 }
 
 .underlying {
@@ -182,14 +177,20 @@ h2 {
     background-color: rgb(65, 160, 192);
     border-radius: 30px;
     width: fit-content;
-    padding: 1rem 1rem 1rem 7vw;
-    margin: 0rem 3rem 2rem 36vw;
+    padding: 1rem 1rem 1rem 8rem;
+    margin: 0rem 0rem 1rem 6rem;
     box-shadow: 1px 1px 5px black;
+    transform: translate(-3%);
+    display: flex;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 .big {
-    padding: 1rem 1rem 1rem 11vw;
-    margin: 2rem 15rem 0rem 33vw;
+    padding: 1rem 1rem 1rem 7rem;
+    margin: 2rem -15rem 2rem 9rem;
 }
 
 .underlying a svg:hover {
