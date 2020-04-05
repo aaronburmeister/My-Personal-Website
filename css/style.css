@@ -167,7 +167,10 @@ section#main {
 }
 
 #info-container {
-    margin-top: 5rem;
+    margin-top: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
 }
 
 h2 {
@@ -180,7 +183,7 @@ h2 {
     border-radius: 30px;
     width: fit-content;
     padding: 1rem 1rem 1rem 7vw;
-    margin: 2rem 3rem 0rem 36vw;
+    margin: 0rem 3rem 2rem 36vw;
     box-shadow: 1px 1px 5px black;
 }
 
