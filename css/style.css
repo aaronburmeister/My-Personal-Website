@@ -288,6 +288,9 @@ h2 {
     .big {
         margin: 0.5rem;
     }
+    #projects-container {
+        margin: 0rem;
+    }
 }
 
 /* RESUME PAGE **************************************/
@@ -312,4 +315,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
