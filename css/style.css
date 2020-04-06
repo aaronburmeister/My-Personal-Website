@@ -323,7 +323,27 @@ embed {
     width: 70%;
 }
 
-/* BLOG PAGE *****************************************/
+/* ABOUT ME PAGE *****************************************/
+#about-me-description {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline {
+    width: 70%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeline h4 {
+    margin: 0.4rem;
+}
+
+.timeline p {
+    margin-bottom: 1rem;
+}
 
 /* FOOTER *********************************************/
 
