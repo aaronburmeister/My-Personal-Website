@@ -67,6 +67,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-end;
+    background-color: rgb(219, 219, 219);
 }
 
 a {
@@ -79,13 +80,14 @@ header {
     justify-content: space-between;
     padding: 1rem;
     background-color: rgb(41, 41, 41);
+    align-items: center;
 }
 
 header h1 {
     text-align: left;
     font-size: 32px;
     font-weight: 700;
-    color: white;
+    color: rgb(219, 219, 219);
     width: 30%
 }
 
@@ -111,20 +113,20 @@ nav ul a {
     text-decoration: none;
     padding: 1rem;
     border-radius: 30px;
-    color: white;
+    color: rgb(219, 219, 219);
     display: flex;
     align-items: center;
 }
 
 nav ul a .svg-icon {
-    fill: white;
+    fill: rgb(219, 219, 219);
 }
 
 nav ul a:hover {
     background-color: black;
     color: rgb(41, 41, 41);
     transition-duration: 1s;
-    background-color: white;
+    background-color: rgb(219, 219, 219);
 }
 
 nav ul a:hover .svg-icon {
@@ -210,6 +212,11 @@ h2 {
     margin-right: 20px;
 }
 
+hr {
+    border-top: 3px solid rgb(90, 90, 90);
+    width: 60%;
+}
+
 #projects-container {
     display: flex;
     justify-content: space-evenly;
@@ -219,12 +226,22 @@ h2 {
 
 .project {
     margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px black;
+    width: 332px;
+    background-color: rgb(238, 236, 236);
 }
 
 .project-info a{
     display: flex;
     align-items: center;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 600;
+    padding: 0.4rem;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 .project-info a:hover {
@@ -316,4 +333,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(41, 41, 41);
+    color: lightslategrey;
+    padding: 2rem;
 }
