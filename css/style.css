@@ -88,7 +88,6 @@ header h1 {
     font-size: 32px;
     font-weight: 700;
     color: rgb(219, 219, 219);
-    width: 30%
 }
 
 header h1 a {
@@ -98,7 +97,7 @@ header h1 a {
 nav {
     display: flex;
     justify-content: flex-end;
-    width: 60%;
+    align-items: center;
 }
 
 nav ul {
@@ -140,10 +139,21 @@ nav ul a:hover .svg-icon {
     margin-right: 0.5rem;
 }
 
+.menu {
+    display: none;
+    height: 40px;
+    width: auto;
+    fill: rgb(219, 219, 219);
+}
+
 @media screen and (max-width: 760px) {
-    nav {
+    nav ul {
         display: none;
     }
+    .menu {
+        display: block;
+    }
+    
 }
 
 
@@ -307,6 +317,15 @@ h4 {
     }
     #projects-container {
         margin: 0rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .project {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .underlying, .big {
+        margin: 0.5rem 0rem 0.5rem 0rem;
     }
 }
 
