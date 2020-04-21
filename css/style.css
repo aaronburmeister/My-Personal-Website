@@ -147,10 +147,6 @@ nav {
     fill: rgb(219, 219, 219);
 }
 
-header h1 a {
-    animation: close-menu 3s;
-}
-
 @media screen and (max-width: 760px) {
     .menu {
         position: absolute;
@@ -178,9 +174,11 @@ header h1 a {
     a.open {
         opacity: 1;
         animation-name: open-menu;
+        pointer-events: auto;
     }
     a.close {
         opacity: 0;
+        pointer-events: none;
         animation-name: close-menu;
     }
 }
@@ -413,7 +411,7 @@ embed {
 }
 
 .timeline h4 {
-    margin: 0.4rem;
+    font-weight: 600;
 }
 
 .timeline p {
