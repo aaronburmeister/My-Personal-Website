@@ -154,7 +154,11 @@ nav {
         display: block;
         margin: 0px;
         z-index: 200;
-        transform: translateY(222px)
+        transform: translateY(222px);
+        pointer-events: none;
+    }
+    .menu li {
+        pointer-events: none;
     }
     .menu a {
         opacity: 0;
@@ -388,12 +392,38 @@ h4 {
 section#resume {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
-embed {
-    height: 800px;
-    width: 70%;
+.resume {
+    min-height: 1200px;
+    min-width: 1000px;
+}
+
+.downloadResume {
+    background-color: rgb(75, 75, 75);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 240px;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .resume {
+        display: none;
+    }
+    .downloadResume {
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 }
 
 /* ABOUT ME PAGE *****************************************/
