@@ -100,7 +100,7 @@ nav {
     align-items: center;
 }
 
-nav ul {
+.menu {
     list-style-type: none;
     justify-content: space-evenly;
     margin: 1rem;
@@ -108,7 +108,7 @@ nav ul {
     font-family: 'Kanit', sans-serif;
 }
 
-nav ul a {
+.menu a {
     text-decoration: none;
     padding: 1rem;
     border-radius: 30px;
@@ -117,18 +117,18 @@ nav ul a {
     align-items: center;
 }
 
-nav ul a .svg-icon {
+.menu a .svg-icon {
     fill: rgb(219, 219, 219);
 }
 
-nav ul a:hover {
+.menu a:hover {
     background-color: black;
     color: rgb(41, 41, 41);
     transition-duration: 1s;
     background-color: rgb(219, 219, 219);
 }
 
-nav ul a:hover .svg-icon {
+.menu a:hover .svg-icon {
     fill: rgb(41, 41, 41);
     transition-duration: 1s;
 }
@@ -139,21 +139,77 @@ nav ul a:hover .svg-icon {
     margin-right: 0.5rem;
 }
 
-.menu {
+.hamburger-menu {
     display: none;
     height: 40px;
     width: auto;
+    margin: 10px;
     fill: rgb(219, 219, 219);
 }
 
+header h1 a {
+    animation: close-menu 3s;
+}
+
 @media screen and (max-width: 760px) {
-    nav ul {
-        display: none;
-    }
     .menu {
+        position: absolute;
+        flex-direction: column;
+        display: block;
+        margin: 0px;
+        z-index: 200;
+        transform: translateY(222px)
+    }
+    .menu a {
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        padding: 2rem;
+        transform: translateX(0px);
+        border-radius: 0px;
+        background-color: rgb(41, 41, 41);
+    }
+    nav div {
+        position: relative;
+    }
+    .hamburger-menu {
         display: block;
     }
-    
+    a.open {
+        opacity: 1;
+        animation-name: open-menu;
+    }
+    a.close {
+        opacity: 0;
+        animation-name: close-menu;
+    }
+}
+
+@keyframes open-menu {
+    0% {
+        opacity: 1;
+        transform: translateX(151px)
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes close-menu {
+    0% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+    50% {
+        opacity: 0.8
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(175px)
+    }
 }
 
 
