@@ -1,0 +1,14 @@
+<urlset>
+    <url>
+        <loc>http://aaronburmeister.tech/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://aaronburmeister.tech/about.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://aaronburmeister.tech/resume.html</loc>
+        <priority>0.7</priority>
+    </url>
+</urlset>
