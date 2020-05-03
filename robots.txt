@@ -1,1 +1,1 @@
-Sitemap: http://aaronburmeister.tech/sitemap.xml
+Sitemap: https://aaronburmeister.tech/sitemap.xml
